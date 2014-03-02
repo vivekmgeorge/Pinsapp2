@@ -27,6 +27,8 @@ Pinsapp2::Application.configure do
   # number of complex assets.
   config.assets.debug = true
 
+  Paperclip.options[:command_path] = "/usr/local/bin"
+
   # Required for Heroku
   # Note to set this to your actual host
   config.action_mailer.default_url_options = { :host => 'viveksandbox.com' }
